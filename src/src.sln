@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dtx.core", "dtx.core\dtx.co
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dtx.core.test", "..\test\dtx.core.test\dtx.core.test.csproj", "{6FEFB0FE-FAC7-4DB8-9199-0A828B365706}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dtx.addin", "dtx.addin\dtx.addin.csproj", "{D111CD8E-03A7-47AA-B117-593140FE7B04}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{6FEFB0FE-FAC7-4DB8-9199-0A828B365706}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6FEFB0FE-FAC7-4DB8-9199-0A828B365706}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6FEFB0FE-FAC7-4DB8-9199-0A828B365706}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D111CD8E-03A7-47AA-B117-593140FE7B04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D111CD8E-03A7-47AA-B117-593140FE7B04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D111CD8E-03A7-47AA-B117-593140FE7B04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D111CD8E-03A7-47AA-B117-593140FE7B04}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

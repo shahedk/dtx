@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace dtx.core
 {
-    public class Class1
+    public class TableIndex
     {
     }
 }
