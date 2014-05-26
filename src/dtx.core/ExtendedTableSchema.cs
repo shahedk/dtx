@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 
-namespace dtx.core
+namespace Dtx
 {
     /// <summary>
     /// An extended schema object from the TableSchema to contain additional properties.

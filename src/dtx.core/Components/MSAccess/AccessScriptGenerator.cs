@@ -1,14 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data;
 using System.Linq;
-using dtx.core;
 
-namespace dtx.addin.MSAccess
+namespace Dtx.Components.MSAccess
 {
-    public class MSAccessScriptGenerator : IScriptGenerator
+    public class AccessScriptGenerator : IScriptGenerator
     {
-        private readonly IDbTypeConverter _typeConverter = new MSAccessTypeConverter();
+        private readonly IDbTypeConverter _typeConverter = new AccessTypeConverter();
 
         public List<string> CreateTables(HashSet<TableSchema> tables)
         {

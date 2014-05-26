@@ -7,8 +7,8 @@
     <ProjectGuid>{F24399CE-B7A5-4B01-9391-E1B29D92D39A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>dtx.core</RootNamespace>
-    <AssemblyName>dtx.core</AssemblyName>
+    <RootNamespace>Dtx</RootNamespace>
+    <AssemblyName>dtx</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -21,7 +21,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <RunCodeAnalysis>true</RunCodeAnalysis>
-    <DocumentationFile>bin\Debug\dtx.core.XML</DocumentationFile>
+    <DocumentationFile>bin\Debug\dtx.xml</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -41,7 +41,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DbTypeConverter.cs" />
+    <Compile Include="Components\MSAccess\AccessDatabase.cs" />
+    <Compile Include="Components\MSAccess\AccessScriptGenerator.cs" />
+    <Compile Include="Components\MSAccess\AccessTypeConverter.cs" />
+    <Compile Include="Components\SQLServer\SqlServerDatabase.cs" />
+    <Compile Include="Components\SQLServer\SqlServerScriptGenerator.cs" />
+    <Compile Include="Components\SQLServer\SqlServerTypeConverter.cs" />
+    <Compile Include="IDbTypeConverter.cs" />
     <Compile Include="DbTypeMapItem.cs" />
     <Compile Include="ExtendedTableSchema.cs" />
     <Compile Include="FieldSchema.cs" />
@@ -54,6 +60,12 @@
     <Compile Include="TableData.cs" />
     <Compile Include="TableIndex.cs" />
     <Compile Include="TableSchema.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Components\ElasticSearch\" />
+    <Folder Include="Components\MongoDB\" />
+    <Folder Include="Components\SQLite\" />
+    <Folder Include="Core\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
